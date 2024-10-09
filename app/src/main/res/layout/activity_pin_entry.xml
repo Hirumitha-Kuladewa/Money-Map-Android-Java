@@ -1,0 +1,197 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_lock_bg">
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/app_lock"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/pin_heading"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pin_blocks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_lock_header"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pin_blocks"
+        android:layout_above="@id/number_pad"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/circle1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/circle_empty"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/circle2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/circle_empty"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/circle3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/circle_empty"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/circle4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/circle_empty"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="250dp"
+        android:layout_height="330dp"
+        android:id="@+id/number_pad"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:text="@string/app_lock_01"
+            android:id="@+id/button1"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_margin="2dp"
+            style="@style/KeypadButtonStyle"/>
+
+        <Button
+            android:text="@string/app_lock_02"
+            android:id="@+id/button2"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_margin="2dp"
+            style="@style/KeypadButtonStyle"/>
+
+        <Button
+            android:text="@string/app_lock_03"
+            android:id="@+id/button3"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_margin="2dp"
+            style="@style/KeypadButtonStyle"/>
+
+        <Button
+            android:text="@string/app_lock_04"
+            android:id="@+id/button4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            style="@style/KeypadButtonStyle"/>
+
+        <Button
+            android:text="@string/app_lock_05"
+            android:id="@+id/button5"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_margin="2dp"
+            style="@style/KeypadButtonStyle"/>
+
+        <Button
+            android:text="@string/app_lock_06"
+            android:id="@+id/button6"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_margin="2dp"
+            style="@style/KeypadButtonStyle"/>
+
+        <Button
+            android:text="@string/app_lock_07"
+            android:id="@+id/button7"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_margin="2dp"
+            style="@style/KeypadButtonStyle"/>
+
+        <Button
+            android:text="@string/app_lock_08"
+            android:id="@+id/button8"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_margin="2dp"
+            style="@style/KeypadButtonStyle"/>
+
+        <Button
+            android:text="@string/app_lock_09"
+            android:id="@+id/button9"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_margin="2dp"
+            style="@style/KeypadButtonStyle"/>
+
+        <View
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:text="@string/app_lock_0"
+            android:id="@+id/button0"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_margin="2dp"
+            style="@style/KeypadButtonStyle"/>
+
+        <Button
+            android:text="@string/app_lock_delete"
+            android:id="@+id/button_delete"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_margin="2dp"
+            style="@style/KeypadButtonStyle"/>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/app_lock_forgot_password"
+        android:textColor="@color/blue_gradiant_0"
+        android:textSize="16sp"
+        tools:ignore="RelativeOverlap,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/app_lock_cancel"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:ignore="RelativeOverlap,TextContrastCheck" />
+
+</RelativeLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light_green"
+    tools:context=".ui.transaction.TransactionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview_totals"
+            android:background="@color/cream_white"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total_income"
+                    android:text="@string/total_income"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total_expense"
+                    android:text="@string/total_expense"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/income_total"
+                    android:layout_below="@id/total_income"
+                    android:textColor="@color/natural_green"
+                    android:textStyle="bold"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/digital"
+                    android:layout_margin="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expense_total"
+                    android:layout_below="@id/total_expense"
+                    android:textColor="@color/shine_red"
+                    android:textStyle="bold"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/digital"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="8dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview_transactions"
+            android:background="@color/cream_white"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/select_income_expense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_income_expense"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_income_expense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/select_income_expense"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/income"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        android:id="@+id/radio_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:text="@string/expense"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/select_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_transaction_category"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/radio_group_income_expense"
+                    android:layout_marginTop="10dp"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/select_category"
+                    android:layout_marginTop="8dp"
+                    android:padding="15dp"
+                    android:hint="@string/enter_transaction_category"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/edit_text_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+                <TextView
+                    android:id="@+id/enter_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_transaction_amount"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/categories"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/enter_amount"
+                    android:layout_marginTop="8dp"
+                    android:importantForAutofill="no"
+                    android:padding="15dp"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/enter_amount"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/edit_text_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+                <TextView
+                    android:id="@+id/select_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_transaction_date"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/amount"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/selected_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/select_date"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/click_to_select_date"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="15dp"
+                    android:textSize="16sp"
+                    android:gravity="center"/>
+
+                <DatePicker
+                    android:id="@+id/date_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textSize="16sp"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/add_transaction"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add_transaction"
+                android:background="@drawable/button_background"
+                android:textColor="@color/light_green"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

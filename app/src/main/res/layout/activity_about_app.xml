@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_app">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_name_about"
+            android:layout_centerHorizontal="true"
+            android:text="@string/money_map"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/arvo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_version_about"
+            android:layout_below="@id/app_name_about"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/about_version"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/app_logo_about"
+            android:layout_below="@id/app_version_about"
+            android:contentDescription="@string/app_about_logo"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/copyright_about"
+            android:layout_below="@id/app_logo_about"
+            android:layout_marginTop="25dp"
+            android:text="@string/copyright_text"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

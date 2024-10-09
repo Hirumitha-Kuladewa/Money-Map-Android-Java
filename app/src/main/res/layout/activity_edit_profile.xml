@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_green"
+    tools:context=".ui.settings.EditProfileActivity">
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/profile_placeholder"
+        android:contentDescription="@string/profile_picture"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/btn_add_profile_picture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@id/profile_picture"
+        android:layout_alignBottom="@id/profile_picture"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/circle_background_plus"
+        android:contentDescription="@string/add_profile_picture"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_menu_transaction"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cream_white"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/enter_name"
+                android:text="@string/enter_your_name"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enter_name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/enter_your_name_here"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/enter_phone"
+                android:text="@string/enter_your_contact_number"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/name"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enter_phone"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/enter_your_contact_number_here"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <TextView
+                android:id="@+id/btn_save"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact_number"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="@string/save_profile"
+                android:background="@drawable/button_background"
+                android:textColor="@color/light_green"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

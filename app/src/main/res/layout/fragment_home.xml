@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_green"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/home_name_card"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="10dp"
+        android:background="@color/cream_white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        tools:ignore="TextSizeCheck">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/home_profile"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:contentDescription="@string/profile_picture_home"
+                android:focusable="true"
+                android:foregroundGravity="center_vertical"
+                android:src="@drawable/profile_placeholder"
+                android:background="@drawable/animated_border" />
+
+            <TextView
+                android:id="@+id/home_app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/playfair"
+                android:text="@string/app_name"
+                android:textColor="@color/dark_green"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/slogan_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_app_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/arvo"
+                android:text="@string/app_slogan"
+                android:textColor="@color/natural_green"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_name_card"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:layout_marginBottom="60dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/home_bar_graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/cream_white"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/bar_graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_margin="8dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/image_carousal"
+                    android:layout_below="@id/home_bar_graph"
+                    android:layout_margin="10dp"
+                    android:background="@color/cream_white"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/carousel_viewpager"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/image_carousal"
+                    android:background="@color/cream_white"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <TableLayout
+                        android:id="@+id/table_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:stretchColumns="0,1,2,3,4"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Money Map</string>
+    <string name="title_home">Home</string>
+    <string name="title_add_transaction">Add Transaction</string>
+    <string name="title_view_summary">View Summary</string>
+    <string name="profile_picture_home">Profile Picture Home</string>
+    <string name="delete">Delete</string>
+    <string name="type">Type</string>
+    <string name="category">Category</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="actions">Actions</string>
+    <string name="ff">%.2f</string>
+    <string name="transaction_summary_pdf">Transaction Summary.pdf</string>
+    <string name="pin">****</string>
+    <string name="enter_your_pin">Enter PIN</string>
+    <string name="confirm_your_pin">Confirm PIN</string>
+    <string name="save_pin">Save PIN</string>
+    <string name="enter_your_current_pin">Enter current PIN</string>
+    <string name="remove_the_pin">Remove PIN</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="enter_your_contact_number_here">Enter your contact number</string>
+    <string name="enter_your_name">Name</string>
+    <string name="enter_your_contact_number">Contact number</string>
+    <string name="enter_your_name_here">Enter your name</string>
+    <string name="add_profile_picture">Add Profile Picture</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="version_1_0_0">version 1.0.0</string>
+    <string name="contact_us">Contact US</string>
+    <string name="about">About</string>
+    <string name="security">Security</string>
+    <string name="edit_your_profile">Edit Profile</string>
+    <string name="enter_your_password_here">Enter your PIN here</string>
+    <string name="login">Login</string>
+    <string name="forgot_your_pin">Forgot PIN ?</string>
+    <string name="save_summary_date_to_pdf">Save summary data to PDF</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_delete_transaction">Do you want delete transaction?</string>
+    <string name="app_slogan">Better Budget, Better Life.</string>
+    <string name="summary_enter_date">Enter date:</string>
+    <string name="summary_date_enter">Enter the date (DD)</string>
+    <string name="summary_month_enter">Enter the month (MM)</string>
+    <string name="summary_year_enter">Enter the year (YYYY)</string>
+    <string name="summary_enter_month">Enter month:</string>
+    <string name="summary_enter_year">Enter year:</string>
+    <string name="summary_search">Search</string>
+    <string name="summary_save_pdf">Save to PDF</string>
+    <string name="select_income_expense">Select Income/ Expense</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="select_transaction_category">Select Transaction Category</string>
+    <string name="enter_transaction_category">Enter transaction category</string>
+    <string name="enter_transaction_amount">Enter transaction amount</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="select_transaction_date">Select transaction date</string>
+    <string name="click_to_select_date">Click to select date</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="total_income">Total Income</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="image_carousal">image carousal</string>
+    <string name="delete_confirmation">delete confirmation</string>
+    <string name="warning">Warning !</string>
+    <string name="app_lock_header">Enter Passcode</string>
+    <string name="app_lock_01">1</string>
+    <string name="app_lock_02">2</string>
+    <string name="app_lock_03">3</string>
+    <string name="app_lock_04">4</string>
+    <string name="app_lock_05">5</string>
+    <string name="app_lock_06">6</string>
+    <string name="app_lock_07">7</string>
+    <string name="app_lock_08">8</string>
+    <string name="app_lock_09">9</string>
+    <string name="app_lock_0">0</string>
+    <string name="app_lock_delete">x</string>
+    <string name="app_lock_forgot_password">Forgot Password?</string>
+    <string name="app_lock_cancel">Cancel</string>
+    <string name="create_pin_lock">Create PIN Lock</string>
+    <string name="edit_pin">Edit PIN</string>
+    <string name="confirm_new_pin">Confirm new PIN</string>
+    <string name="enter_new_pin">Enter new PIN</string>
+    <string name="change_your_pin">Change your PIN</string>
+    <string name="enter_current_pin">Enter current PIN</string>
+    <string name="remove_your_pin">Remove your PIN</string>
+    <string name="contact_us_heading">Contact Us</string>
+    <string name="contact_via_whatsapp">Contact via WhatsApp</string>
+    <string name="contact_via_telegram">Contact via Telegram</string>
+    <string name="contact_via_instagram">Contact via Instagram</string>
+    <string name="contact_via_facebook">Contact via FaceBook</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="telegram">Telegram</string>
+    <string name="facebook">FaceBook</string>
+    <string name="instagram">Instagram</string>
+    <string name="money_map">Money Map</string>
+    <string name="about_version">Version 1.0.0</string>
+    <string name="app_about_logo">app about logo</string>
+    <string name="copyright_text">© 2024 Money Map Inc.</string>
+
+    <string-array name="categories_array">
+        <item>Salary</item>
+        <item>Housing</item>
+        <item>Food</item>
+        <item>Transportation</item>
+        <item>Utilities</item>
+        <item>Savings</item>
+        <item>Health Care</item>
+        <item>Insurance</item>
+        <item>Debt</item>
+        <item>Gifts</item>
+        <item>Entertainment</item>
+        <item>Pets</item>
+    </string-array>
+
+</resources>

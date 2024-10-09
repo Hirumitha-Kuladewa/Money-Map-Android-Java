@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:background="@color/light_green"
+    tools:context=".ui.settings.ContactUsActivity">
+
+    <TextView
+        android:id="@+id/contact_us_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_us_heading"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/whatsapp_card"
+        android:layout_below="@id/contact_us_title"
+        android:background="@color/cream_white"
+        android:onClick="contactViaWhatsApp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp" >
+
+        <LinearLayout
+            android:id="@+id/whatsapp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_us_title"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/contact_whatsapp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/contact_via_whatsapp"
+                android:src="@drawable/whatsapp"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/whatsapp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/telegram_card"
+        android:layout_below="@id/whatsapp_card"
+        android:background="@color/cream_white"
+        android:layout_marginTop="20dp"
+        android:onClick="contactViaTelegram"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp" >
+
+        <LinearLayout
+            android:id="@+id/telegram_layout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_us_title"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/contact_telegram"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/telegram"
+                android:contentDescription="@string/contact_via_telegram" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telegram"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/facebook_card"
+        android:layout_below="@id/telegram_card"
+        android:background="@color/cream_white"
+        android:layout_marginTop="20dp"
+        android:onClick="contactViaFacebook"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp" >
+
+        <LinearLayout
+            android:id="@+id/facebook_layout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/telegram_card"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/contact_facebook"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/facebook"
+                android:contentDescription="@string/contact_via_facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/facebook"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/instagram_card"
+        android:layout_below="@id/facebook_card"
+        android:background="@color/cream_white"
+        android:layout_marginTop="20dp"
+        android:onClick="contactViaInstagram"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp" >
+
+        <LinearLayout
+            android:id="@+id/instagram_layout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/telegram_card"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/contact_instagram"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/instagram"
+                android:contentDescription="@string/contact_via_instagram" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instagram"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

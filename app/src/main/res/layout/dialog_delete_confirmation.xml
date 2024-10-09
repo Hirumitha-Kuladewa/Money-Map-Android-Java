@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:ignore="UseCompoundDrawables">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/dialog_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/delete_confirmation"
+            android:src="@drawable/ic_warning" />
+
+        <TextView
+            android:id="@+id/dialog_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:textColor="@color/black"
+            android:text="@string/warning"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:textColor="@color/black"
+        android:text="@string/confirm_delete_transaction"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

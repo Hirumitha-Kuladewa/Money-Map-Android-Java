@@ -1,0 +1,216 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".ui.summary.ViewSummaryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cream_white"
+            android:layout_margin="10dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/summary_enter_date"
+                    android:textSize="@dimen/summary_text_view"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/editTextDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_date"
+                    android:hint="@string/summary_date_enter"
+                    android:importantForAutofill="no"
+                    android:textSize="@dimen/summary_edit_text"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:inputType="number"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="15dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+                <TextView
+                    android:id="@+id/text_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextDay"
+                    android:text="@string/summary_enter_month"
+                    android:textSize="@dimen/summary_text_view"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/editTextMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_month"
+                    android:hint="@string/summary_month_enter"
+                    android:importantForAutofill="no"
+                    android:textSize="@dimen/summary_edit_text"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:inputType="number"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="15dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+                <TextView
+                    android:id="@+id/text_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextMonth"
+                    android:text="@string/summary_enter_year"
+                    android:textSize="@dimen/summary_text_view"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/editTextYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_year"
+                    android:hint="@string/summary_year_enter"
+                    android:importantForAutofill="no"
+                    android:textSize="@dimen/summary_edit_text"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:inputType="number"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="15dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+                <TextView
+                    android:id="@+id/buttonSearch"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextYear"
+                    android:text="@string/summary_search"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/light_green"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:padding="15dp"
+                    android:textSize="16sp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cream_white"
+            android:layout_margin="10dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:id="@+id/view_summary_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp" >
+
+                <TextView
+                    android:id="@+id/summaryTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cream_white"
+            android:layout_margin="10dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp">
+
+            <TableLayout
+                android:id="@+id/tableLayoutResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="1"
+                android:stretchColumns="1"
+                android:padding="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cream_white"
+            android:layout_margin="10dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="16dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <TextView
+            android:id="@+id/buttonSaveToPdf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/summary_save_pdf"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/light_green"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

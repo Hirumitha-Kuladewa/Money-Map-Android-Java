@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/light_green" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cream_white"
+            android:id="@+id/create_pin"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/create_pin_heading"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="15dp"
+                    android:text="@string/create_pin_lock"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/enter_pin_text"
+                    android:layout_below="@id/create_pin_heading"
+                    android:text="@string/enter_your_pin"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/enter_pin_text"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/pin"
+                    android:importantForAccessibility="yes"
+                    android:importantForAutofill="no"
+                    android:inputType="numberPassword"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"
+                    tools:ignore="VisualLintTextFieldSize,DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/confirm_pin_text"
+                    android:layout_below="@id/pin"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/confirm_your_pin"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/confirm_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/confirm_pin_text"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/pin"
+                    android:importantForAccessibility="yes"
+                    android:importantForAutofill="no"
+                    android:inputType="numberPassword"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"
+                    tools:ignore="VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/confirm_pin"
+                    android:layout_marginTop="20dp"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:background="@drawable/button_background"
+                    android:text="@string/save_pin"
+                    android:textColor="@color/light_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_pin"
+            android:background="@color/cream_white"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_pin_heading"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="15dp"
+                    android:text="@string/change_your_pin"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/enter_current_pin_text"
+                    android:layout_below="@id/edit_pin_heading"
+                    android:text="@string/enter_current_pin"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/enter_current_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/enter_current_pin_text"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/pin"
+                    android:importantForAccessibility="yes"
+                    android:importantForAutofill="no"
+                    android:inputType="numberPassword"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"
+                    tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/enter_edit_pin_text"
+                    android:layout_below="@id/enter_current_pin"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/enter_new_pin"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/edit_new_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/enter_edit_pin_text"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/pin"
+                    android:importantForAccessibility="yes"
+                    android:importantForAutofill="no"
+                    android:inputType="numberPassword"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_confirm_pin_text"
+                    android:layout_below="@id/edit_new_pin"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/confirm_new_pin"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/confirm_edit_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_confirm_pin_text"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/pin"
+                    android:importantForAccessibility="yes"
+                    android:importantForAutofill="no"
+                    android:inputType="numberPassword"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/btn_save_new_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/confirm_edit_pin"
+                    android:layout_marginTop="20dp"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:background="@drawable/button_background"
+                    android:text="@string/edit_pin"
+                    android:textColor="@color/light_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/remove_pin_card"
+            android:background="@color/cream_white"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/remove_pin_heading"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="15dp"
+                    android:text="@string/remove_your_pin"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/remove_pin_text"
+                    android:layout_below="@id/remove_pin_heading"
+                    android:text="@string/enter_your_current_pin"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/remove_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/remove_pin_text"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/pin"
+                    android:importantForAccessibility="yes"
+                    android:inputType="numberPassword"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+                <TextView
+                    android:id="@+id/btn_remove_lock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/remove_pin"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/remove_the_pin"
+                    android:textColor="@color/light_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
