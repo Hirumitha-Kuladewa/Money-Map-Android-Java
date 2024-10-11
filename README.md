@@ -13,4 +13,5 @@ Application theme: Green Color Based
 4. Summary: Users can view a summary of financial data for a specific month, specific day or specific including total income, total expenses, and net income. Users can download summary data to pdf file as well.<br>
 5. Graphical user interface (GUI): The application offers an intuitive GUI with a themed interface, making it user-friendly.<br>
 
+##
 Created by: Hirumitha Kuladewa, Pasindu Hirumal, Shashitha Chamod
