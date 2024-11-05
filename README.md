@@ -1,17 +1,51 @@
-# Money Map Android Application
+# 🌟 Money Map Android Application
 
-Project name: Money Map<br>
-Lanuage: Java<br>
-Libraries: mpandroidchart, glide, glidecompiler, imagepicker, imagecarousal<br>
-Application theme: Green Color Based
+## Project: Money Map
+- **Language**: Java
+- **Theme**: Green Based 🌿
+
+---
+
+## Libraries
+- 📊 mpandroidchart
+- 🌈 Glide
+- 📦 GlideCompiler
+- 🖼️ ImagePicker
+- 🌀 ImageCarousel
+
+---
 
 ## Key Features
 
-1. Data entry: Users can enter financial transactions with details such as type (income/expenses), amount, category, and date.<br>
-2. Data visualization: The application includes analytics features with a bar graph representing total income, total expenses, budget, and net income.<br>
-3. Data saving: The entered financial data is saved in SQLite database.<br>
-4. Summary: Users can view a summary of financial data for a specific month, specific day or specific including total income, total expenses, and net income. Users can download summary data to pdf file as well.<br>
-5. Graphical user interface (GUI): The application offers an intuitive GUI with a themed interface, making it user-friendly.<br>
+### 1. Data Entry
+- 💵 Type: Income / Expenses
+- 💲 Amount: The monetary value
+- 📂 Category: Smart tracking
+- 📅 Date: Transaction timing
 
-##
-Created by: Hirumitha Kuladewa, Pasindu Hirumal, Shashitha Chamod
+### 2. Data Visualization
+- 📈 Total Income
+- 📉 Total Expenses
+- 💰 Budget
+- 📊 Net Income
+
+### 3. Data Saving
+- 🔒 Secure SQLite Storage
+
+### 4. Summary
+- 📆 Monthly View
+- 🗓️ Daily View
+- 📊 Overall Analytics
+- 📥 PDF Export
+
+### 5. GUI
+- 🎨 Colorful Buttons
+- ✨ Smooth Transitions
+- 🌟 Eye-catching Layouts
+
+---
+
+## Created By
+- 🎓 Hirumitha Kuladewa
+- 🎓 Pasindu Hirumal
+- 🎓 Shashitha Chamod
